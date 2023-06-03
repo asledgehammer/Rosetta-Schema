@@ -185,6 +185,9 @@
         "methods": {
           "$ref": "#/definitions/methods"
         },
+        "modifiers": {
+          "$ref": "#/definitions/modifiers"
+        },
         "notes": {
           "type": "string"
         }
