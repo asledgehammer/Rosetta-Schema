@@ -19,10 +19,53 @@
     },
     "values": {
       "$ref": "#/definitions/values"
+    },
+    "luaClasses": {
+      "$ref": "#/definitions/luaClasses"
     }
   },
   "additionalItems": false,
   "definitions": {
+    "luaClasses": {
+      "type": "object",
+      "description": "Lua Classes.",
+      "minItems": 1,
+      "patternProperties": {
+        "^": {
+          "$ref": "#/definitions/luaClass"
+        }
+      },
+      "additionalProperties": false
+    },
+    "luaClass": {
+      "type": "object",
+      "description": "Lua Class.",
+      "properties": {
+        "deprecated": {
+          "type": "boolean",
+          "description": "If the class is deprecated."
+        },
+        "extends": {
+          "type": "string"
+        },
+        "values": {
+          "$ref": "#/definitions/values"
+        },
+        "fields": {
+          "$ref": "#/definitions/fields"
+        },
+        "constructor": {
+          "$ref": "#/definitions/constructor"
+        },
+        "functions": {
+          "$ref": "#/definitions/functions"
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
     "events": {
       "type": "object",
       "description": "Lua Events.",
