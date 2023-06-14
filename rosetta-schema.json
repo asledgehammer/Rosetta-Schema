@@ -140,10 +140,6 @@
           "type": "string"
         }
       },
-      "required": [
-        "name",
-        "returns"
-      ],
       "additionalProperties": false
     },
     "tables": {
