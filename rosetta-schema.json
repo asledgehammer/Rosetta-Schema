@@ -114,7 +114,7 @@
     },
     "functions": {
       "type": "object",
-      "description": "Global Functions.",
+      "description": "Functions.",
       "minItems": 1,
       "patternProperties": {
         "^": {
@@ -126,9 +126,6 @@
       "type": "object",
       "description": "Function.",
       "properties": {
-        "name": {
-          "type": "string"
-        },
         "deprecated": {
           "type": "boolean",
           "description": "If the function is deprecated."
@@ -145,7 +142,6 @@
       },
       "required": [
         "name",
-        "type",
         "returns"
       ],
       "additionalProperties": false
