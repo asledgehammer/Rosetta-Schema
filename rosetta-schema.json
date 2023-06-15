@@ -33,63 +33,8 @@
   },
   "additionalItems": false,
   "definitions": {
-    "luaClasses": {
-      "type": "object",
-      "description": "Lua Classes.",
-      "minItems": 1,
-      "patternProperties": {
-        "^": {
-          "$ref": "#/definitions/luaClass"
-        }
-      },
-      "additionalProperties": false
-    },
-    "luaClass": {
-      "type": "object",
-      "description": "Lua Class.",
-      "properties": {
-        "deprecated": {
-          "type": "boolean",
-          "description": "If the class is deprecated."
-        },
-        "extends": {
-          "type": "string"
-        },
-        "values": {
-          "$ref": "#/definitions/values"
-        },
-        "fields": {
-          "$ref": "#/definitions/fields"
-        },
-        "constructor": {
-          "$ref": "#/definitions/constructor"
-        },
-        "methods": {
-          "type": "object",
-          "description": "Lua Class Methods.",
-          "minItems": 1,
-          "patternProperties": {
-            "^": {
-              "$ref": "#/definitions/function"
-            }
-          }
-        },
-        "functions": {
-          "type": "object",
-          "description": "Lua Class Functions. (Static Methods)",
-          "minItems": 1,
-          "patternProperties": {
-            "^": {
-              "$ref": "#/definitions/function"
-            }
-          }
-        },
-        "notes": {
-          "type": "string"
-        }
-      },
-      "additionalProperties": false
-    },
+
+
     "events": {
       "type": "object",
       "description": "Lua Events.",
@@ -124,10 +69,10 @@
           "description": "If the callback is deprecated."
         },
         "parameters": {
-          "$ref": "#/definitions/parameters"
+          "$ref": "#/definitions/luaParameters"
         },
         "returns": {
-          "$ref": "#/definitions/returns"
+          "$ref": "#/definitions/luaReturns"
         },
         "notes": {
           "type": "string"
@@ -136,6 +81,75 @@
       "required": [
         "returns"
       ],
+      "additionalProperties": false
+    },
+
+
+    "luaClasses": {
+      "type": "object",
+      "description": "Lua Classes.",
+      "minItems": 1,
+      "patternProperties": {
+        "^": {
+          "$ref": "#/definitions/luaClass"
+        }
+      },
+      "additionalProperties": false
+    },
+    "luaClass": {
+      "type": "object",
+      "description": "Lua Class.",
+      "properties": {
+        "deprecated": {
+          "type": "boolean",
+          "description": "If the class is deprecated."
+        },
+        "extends": {
+          "type": "string"
+        },
+        "values": {
+          "$ref": "#/definitions/values"
+        },
+        "fields": {
+          "$ref": "#/definitions/luaFields"
+        },
+        "constructor": {
+          "type": "object",
+          "description": "Lua Class Constructor.",
+          "properties": {
+            "parameters": {
+              "$ref": "#/definitions/luaParameters"
+            },
+            "notes": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "methods": {
+          "type": "object",
+          "description": "Lua Class Methods.",
+          "minItems": 1,
+          "patternProperties": {
+            "^": {
+              "$ref": "#/definitions/function"
+            }
+          }
+        },
+        "functions": {
+          "type": "object",
+          "description": "Lua Class Functions. (Static Methods)",
+          "minItems": 1,
+          "patternProperties": {
+            "^": {
+              "$ref": "#/definitions/function"
+            }
+          }
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
       "additionalProperties": false
     },
     "function": {
@@ -147,10 +161,10 @@
           "description": "If the function is deprecated."
         },
         "parameters": {
-          "$ref": "#/definitions/parameters"
+          "$ref": "#/definitions/luaParameters"
         },
         "returns": {
-          "$ref": "#/definitions/returns"
+          "$ref": "#/definitions/luaReturns"
         },
         "notes": {
           "type": "string"
@@ -216,12 +230,57 @@
           "type": "string"
         },
         "type": {
-          "$ref": "#/definitions/type"
+          "type": "string"
         },
         "notes": {
           "type": "string"
         }
       },
+      "additionalProperties": false
+    },
+    "luaReturns": {
+      "description": "Lua Returns.",
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "additionalProperties": false
+    },
+    "luaParameters": {
+      "type": "array",
+      "description": "Lua Parameters.",
+      "items": {
+        "$ref": "#/definitions/luaParameter"
+      },
+      "minItems": 1,
+      "additionalProperties": false
+    },
+    "luaParameter": {
+      "type": "object",
+      "description": "Lua Parameter.",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "type"
+      ],
       "additionalProperties": false
     },
     "namespaces": {
