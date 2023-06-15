@@ -12,7 +12,14 @@
       "$ref": "#/definitions/tables"
     },
     "functions": {
-      "$ref": "#/definitions/functions"
+      "type": "object",
+      "description": "Global Lua Functions.",
+      "minItems": 1,
+      "patternProperties": {
+        "^": {
+          "$ref": "#/definitions/function"
+        }
+      }
     },
     "events": {
       "$ref": "#/definitions/events"
@@ -57,8 +64,25 @@
         "constructor": {
           "$ref": "#/definitions/constructor"
         },
+        "methods": {
+          "type": "object",
+          "description": "Lua Class Methods.",
+          "minItems": 1,
+          "patternProperties": {
+            "^": {
+              "$ref": "#/definitions/function"
+            }
+          }
+        },
         "functions": {
-          "$ref": "#/definitions/functions"
+          "type": "object",
+          "description": "Lua Class Functions. (Static Methods)",
+          "minItems": 1,
+          "patternProperties": {
+            "^": {
+              "$ref": "#/definitions/function"
+            }
+          }
         },
         "notes": {
           "type": "string"
@@ -86,7 +110,9 @@
         "callback": {
           "$ref": "#/definitions/callback"
         },
-        "notes": {"type": "string"}
+        "notes": {
+          "type": "string"
+        }
       },
       "additionalProperties": false
     },
@@ -111,16 +137,6 @@
         "returns"
       ],
       "additionalProperties": false
-    },
-    "functions": {
-      "type": "object",
-      "description": "Functions.",
-      "minItems": 1,
-      "patternProperties": {
-        "^": {
-          "$ref": "#/definitions/function"
-        }
-      }
     },
     "function": {
       "type": "object",
