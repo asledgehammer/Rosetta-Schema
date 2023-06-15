@@ -183,7 +183,14 @@
           "$ref": "#/definitions/tables"
         },
         "functions": {
-          "$ref": "#/definitions/functions"
+          "type": "object",
+          "description": "Lua Table Functions.",
+          "minItems": 1,
+          "patternProperties": {
+            "^": {
+              "$ref": "#/definitions/function"
+            }
+          }
         },
         "notes": {
           "type": "string"
