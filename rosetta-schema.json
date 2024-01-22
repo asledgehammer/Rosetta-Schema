@@ -238,6 +238,32 @@
       },
       "additionalProperties": false
     },
+    "luaFields": {
+      "type": "object",
+      "description": "Fields.",
+      "minItems": 1,
+      "patternProperties": {
+        "^": {
+          "$ref": "#/definitions/luaField"
+        }
+      }
+    },
+    "luaField": {
+      "type": "object",
+      "description": "Field.",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
     "luaReturns": {
       "description": "Lua Returns.",
       "type": "object",
