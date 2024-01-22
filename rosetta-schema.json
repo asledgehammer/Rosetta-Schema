@@ -269,10 +269,16 @@
       "type": "object",
       "properties": {
         "type": {
+          "description": "The lua type of the returned value.",
           "type": "string"
         },
         "notes": {
+          "description": "A brief description of the returned value.",
           "type": "string"
+        },
+        "name": {
+          "type": "string",
+          "description": "The name to show up on the typing as what is returned."
         }
       },
       "required": [
