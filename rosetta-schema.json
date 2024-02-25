@@ -49,6 +49,10 @@
     "event": {
       "type": "object",
       "properties": {
+        "deprecated": {
+          "type": "boolean",
+          "description": "If the event is deprecated."
+        },
         "name": {
           "type": "string"
         },
@@ -89,10 +93,6 @@
     "callback": {
       "type": "object",
       "properties": {
-        "deprecated": {
-          "type": "boolean",
-          "description": "If the callback is deprecated."
-        },
         "parameters": {
           "$ref": "#/definitions/luaParameters"
         },
