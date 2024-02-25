@@ -104,6 +104,63 @@
     },
 
 
+    "hooks": {
+      "type": "object",
+      "description": "Lua Hooks.",
+      "minItems": 1,
+      "patternProperties": {
+        "^": {
+          "$ref": "#/definitions/hook"
+        }
+      },
+      "additionalProperties": false
+    },
+    "hook": {
+      "type": "object",
+      "properties": {
+        "deprecated": {
+          "type": "boolean",
+          "description": "If the hook is deprecated."
+        },
+        "name": {
+          "type": "string"
+        },
+        "callback": {
+          "$ref": "#/definitions/callback"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "context": {
+          "type": "object",
+          "properties": {
+            "server": {
+              "type": "boolean",
+              "description": "If the hook fires on the server.",
+              "default": true
+            },
+            "client": {
+              "type": "boolean",
+              "description": "If the hook fires on the client.",
+              "default": true
+            },
+            "singleplayer": {
+              "type": "boolean",
+              "description": "If the hook fires in singleplayer.",
+              "default": true
+            },
+            "multiplayer": {
+              "type": "boolean",
+              "description": "If the hook fires in multiplayer.",
+              "default": true
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+
+
     "luaClasses": {
       "type": "object",
       "description": "Lua Classes.",
