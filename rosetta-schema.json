@@ -57,6 +57,31 @@
         },
         "notes": {
           "type": "string"
+        },
+        "context": {
+          "type": "object",
+          "properties": {
+            "server": {
+              "type": "boolean",
+              "description": "If the event fires on the server.",
+              "default": true
+            },
+            "client": {
+              "type": "boolean",
+              "description": "If the event fires on the client.",
+              "default": true
+            },
+            "singleplayer": {
+              "type": "boolean",
+              "description": "If the event fires in singleplayer.",
+              "default": true
+            },
+            "multiplayer": {
+              "type": "boolean",
+              "description": "If the event fires in multiplayer.",
+              "default": true
+            }
+          }
         }
       },
       "additionalProperties": false
