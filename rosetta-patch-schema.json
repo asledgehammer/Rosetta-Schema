@@ -50,6 +50,33 @@
       },
       "additionalProperties": false
     },
+    "hooks": {
+      "type": "object",
+      "description": "Lua Hooks.",
+      "minItems": 1,
+      "patternProperties": {
+        "^": {
+          "$ref": "#/definitions/hook"
+        }
+      },
+      "additionalProperties": false
+    },
+    "hook": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "readOnly": true
+        },
+        "callback": {
+          "$ref": "#/definitions/callback"
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
     "callback": {
       "type": "object",
       "properties": {
