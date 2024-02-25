@@ -71,9 +71,6 @@
         "parameters": {
           "$ref": "#/definitions/luaParameters"
         },
-        "returns": {
-          "$ref": "#/definitions/luaReturns"
-        },
         "notes": {
           "type": "string"
         }

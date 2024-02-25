@@ -56,9 +56,6 @@
         "parameters": {
           "$ref": "#/definitions/parameters"
         },
-        "returns": {
-          "$ref": "#/definitions/returns"
-        },
         "notes": {
           "type": "string"
         }
