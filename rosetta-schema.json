@@ -100,9 +100,6 @@
           "type": "string"
         }
       },
-      "required": [
-        "returns"
-      ],
       "additionalProperties": false
     },
 
