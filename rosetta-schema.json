@@ -96,6 +96,9 @@
         "parameters": {
           "$ref": "#/definitions/luaParameters"
         },
+        "returns": {
+          "$ref": "#/definitions/luaReturns"
+        },
         "notes": {
           "type": "string"
         }
@@ -160,6 +163,17 @@
       "additionalProperties": false
     },
 
+    "callbacks": {
+      "type": "object",
+      "description": "Container for other callback types.",
+      "minItems": 1,
+      "patternProperties": {
+        "^": {
+          "$ref": "#/definitions/callback"
+        }
+      },
+      "additionalProperties": false
+    },
 
     "luaClasses": {
       "type": "object",
