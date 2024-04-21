@@ -324,6 +324,9 @@
         },
         "notes": {
           "type": "string"
+        },
+        "defaultValue": {
+          "type": "string"
         }
       },
       "additionalProperties": false
@@ -489,6 +492,9 @@
           "$ref": "#/definitions/type"
         },
         "notes": {
+          "type": "string"
+        },
+        "defaultValue": {
           "type": "string"
         }
       },

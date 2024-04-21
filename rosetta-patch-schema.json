@@ -168,6 +168,9 @@
         },
         "notes": {
           "type": "string"
+        },
+        "defaultValue": {
+          "type": "string"
         }
       },
       "required": [
@@ -234,6 +237,9 @@
           "readOnly": true
         },
         "notes": {
+          "type": "string"
+        },
+        "defaultValue": {
           "type": "string"
         }
       },
