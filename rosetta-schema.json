@@ -33,8 +33,6 @@
   },
   "additionalItems": false,
   "definitions": {
-
-
     "events": {
       "type": "object",
       "description": "Lua Events.",
@@ -105,8 +103,6 @@
       },
       "additionalProperties": false
     },
-
-
     "hooks": {
       "type": "object",
       "description": "Lua Hooks.",
@@ -162,7 +158,6 @@
       },
       "additionalProperties": false
     },
-
     "callbacks": {
       "type": "object",
       "description": "Container for other callback types.",
@@ -174,7 +169,6 @@
       },
       "additionalProperties": false
     },
-
     "luaClasses": {
       "type": "object",
       "description": "Lua Classes.",
@@ -196,6 +190,10 @@
         },
         "extends": {
           "type": "string"
+        },
+        "mutable": {
+          "type": "boolean",
+          "description": "If true, the Lua class will allow foreign properties assigned to it. E.G: '--- @field [any] any'"
         },
         "values": {
           "$ref": "#/definitions/values"
