@@ -320,6 +320,10 @@
         "type": {
           "type": "string"
         },
+        "nullable": {
+          "description": "Appends the 'nil' type to the list of optional types.",
+          "type": "boolean"
+        },
         "notes": {
           "type": "string"
         },
@@ -349,6 +353,10 @@
         "type": {
           "type": "string"
         },
+        "nullable": {
+          "description": "Appends the 'nil' type to the list of optional types.",
+          "type": "boolean"
+        },
         "notes": {
           "type": "string"
         }
@@ -362,6 +370,10 @@
         "type": {
           "description": "The lua type of the returned value.",
           "type": "string"
+        },
+        "nullable": {
+          "description": "Appends the 'nil' type to the list of optional types.",
+          "type": "boolean"
         },
         "notes": {
           "description": "A brief description of the returned value.",
@@ -395,6 +407,14 @@
         },
         "type": {
           "type": "string"
+        },
+        "optional": {
+          "description": "Makes a parameter optional. All optional parameters must be at the end of the parameter list.",
+          "type": "boolean"
+        },
+        "nullable": {
+          "description": "Appends the 'nil' type to the list of optional types.",
+          "type": "boolean"
         },
         "notes": {
           "type": "string"
@@ -636,6 +656,10 @@
         },
         "full": {
           "type": "string"
+        },
+        "nullable": {
+          "description": "Appends the 'null' type to the list of optional types.",
+          "type": "boolean"
         },
         "generics": {
           "$ref": "#/definitions/generics"
