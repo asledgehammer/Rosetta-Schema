@@ -278,7 +278,7 @@
           "type": "boolean",
           "description": "If the class is deprecated."
         },
-        "values": {
+        "fields": {
           "$ref": "#/definitions/values"
         },
         "tables": {
@@ -302,7 +302,7 @@
     },
     "values": {
       "type": "object",
-      "description": "Values.",
+      "description": "Static field(s).",
       "minItems": 1,
       "patternProperties": {
         "^": {
@@ -312,7 +312,7 @@
     },
     "value": {
       "type": "object",
-      "description": "Value.",
+      "description": "Static field.",
       "properties": {
         "name": {
           "type": "string"
