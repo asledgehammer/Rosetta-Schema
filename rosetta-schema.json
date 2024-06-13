@@ -21,6 +21,16 @@
         }
       }
     },
+    "methods": {
+      "type": "object",
+      "description": "Global Java Methods.",
+      "minItems": 1,
+      "patternProperties": {
+        "^": {
+          "$ref": "#/definitions/method"
+        }
+      }
+    },
     "events": {
       "$ref": "#/definitions/events"
     },
