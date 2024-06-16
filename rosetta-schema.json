@@ -22,13 +22,11 @@
       }
     },
     "methods": {
-      "type": "object",
+      "type": "array",
       "description": "Global Java Methods.",
       "minItems": 1,
-      "patternProperties": {
-        "^": {
-          "$ref": "#/definitions/method"
-        }
+      "items": {
+        "$ref": "#/definitions/method"
       }
     },
     "events": {
