@@ -12,14 +12,7 @@
       "$ref": "#/definitions/tables"
     },
     "functions": {
-      "type": "object",
-      "description": "Global Lua Functions.",
-      "minItems": 1,
-      "patternProperties": {
-        "^": {
-          "$ref": "#/definitions/function"
-        }
-      }
+      "$ref": "#/definitions/luaFunctions"
     },
     "methods": {
       "type": "array",
@@ -203,44 +196,20 @@
           "type": "boolean",
           "description": "If true, the Lua class will allow foreign properties assigned to it. E.G: '--- @field [any] any'"
         },
+        "constructors": {
+          "$ref": "#/definitions/luaClassConstructors"
+        },
         "values": {
           "$ref": "#/definitions/values"
         },
         "fields": {
           "$ref": "#/definitions/luaFields"
         },
-        "constructor": {
-          "type": "object",
-          "description": "Lua Class Constructor.",
-          "properties": {
-            "parameters": {
-              "$ref": "#/definitions/luaParameters"
-            },
-            "notes": {
-              "type": "string"
-            }
-          },
-          "additionalProperties": false
-        },
         "methods": {
-          "type": "object",
-          "description": "Lua Class Methods.",
-          "minItems": 1,
-          "patternProperties": {
-            "^": {
-              "$ref": "#/definitions/function"
-            }
-          }
+          "$ref": "#/definitions/luaClassMethods"
         },
         "functions": {
-          "type": "object",
-          "description": "Lua Class Functions. (Static Methods)",
-          "minItems": 1,
-          "patternProperties": {
-            "^": {
-              "$ref": "#/definitions/function"
-            }
-          }
+          "$ref": "#/definitions/luaFunctions"
         },
         "notes": {
           "type": "string"
@@ -293,14 +262,7 @@
           "$ref": "#/definitions/tables"
         },
         "functions": {
-          "type": "object",
-          "description": "Lua Table Functions.",
-          "minItems": 1,
-          "patternProperties": {
-            "^": {
-              "$ref": "#/definitions/function"
-            }
-          }
+          "$ref": "#/definitions/luaFunctions"
         },
         "notes": {
           "type": "string"
@@ -340,6 +302,43 @@
         }
       },
       "additionalProperties": false
+    },
+    "luaClassConstructors": {
+      "type": "array",
+      "description": "LuaClass Constructors.",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/definitions/luaClassConstructor"
+      }
+    },
+    "luaClassConstructor": {
+      "type": "object",
+      "description": "Lua Class Constructor.",
+      "properties": {
+        "parameters": {
+          "$ref": "#/definitions/luaParameters"
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "luaClassMethods": {
+      "type": "array",
+      "description": "LuaClass Methods.",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/definitions/function"
+      }
+    },
+    "luaFunctions": {
+      "type": "array",
+      "description": "Lua Functions.",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/definitions/function"
+      }
     },
     "luaFields": {
       "type": "object",
