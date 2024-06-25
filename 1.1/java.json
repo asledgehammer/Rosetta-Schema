@@ -10,7 +10,7 @@
             "minItems": 1,
             "patternProperties": {
                 "^": {
-                    "$ref": "java/namespace.json"
+                    "$ref": "./namespace.json"
                 }
             }
         }
