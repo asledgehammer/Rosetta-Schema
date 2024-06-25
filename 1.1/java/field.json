@@ -1,0 +1,31 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/asledgehammer/PZ-Rosetta-Schema/main/1.1/java/field",
+    "type": "object",
+    "minItems": 1,
+    "additionalProperties": false,
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "deprecated": {
+            "type": "boolean",
+            "description": "If the field is deprecated."
+        },
+        "modifiers": {
+            "$ref": "1.1/java/modifiers"
+        },
+        "type": {
+            "$ref": "1.1/java/type"
+        },
+        "notes": {
+            "type": "string"
+        },
+        "defaultValue": {
+            "type": "string"
+        },
+        "tags": {
+            "$ref": "1.1/tags"
+        }
+    }
+}

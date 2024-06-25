@@ -1,0 +1,19 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/asledgehammer/PZ-Rosetta-Schema/main/1.1/java",
+    "type": "object",
+    "properties": {
+        "namespaces": {
+            "type": "object",
+            "description": "Namespaces.",
+            "minItems": 1,
+            "patternProperties": {
+                "^": {
+                    "$ref": "1.1/java/namespace"
+                }
+            }
+        }
+    },
+    "definitions": {},
+    "additionalItems": false
+}
