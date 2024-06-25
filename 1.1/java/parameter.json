@@ -4,6 +4,18 @@
     "type": "object",
     "additionalProperties": false,
     "properties": {
-        
-    }
+        "name": {
+            "type": "string"
+        },
+        "type": {
+            "$ref": "type.json"
+        },
+        "notes": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "name",
+        "type"
+    ]
 }
