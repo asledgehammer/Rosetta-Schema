@@ -5,6 +5,6 @@
     "type": "array",
     "additionalItems": false,
     "items": {
-        "$ref": "type"
+        "$ref": "type.json"
     }
 }

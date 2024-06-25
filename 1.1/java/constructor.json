@@ -6,7 +6,7 @@
     "additionalProperties": false,
     "properties": {
         "modifiers": {
-          "$ref": "modifiers"
+          "$ref": "modifiers.json"
         },
         "deprecated": {
           "type": "boolean",
@@ -17,7 +17,7 @@
             "minItems": 1,
             "additionalItems": false,
             "items": {
-                "$ref": "parameter"
+                "$ref": "parameter.json"
             }
         },
         "notes": {

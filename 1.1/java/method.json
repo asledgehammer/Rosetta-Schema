@@ -8,7 +8,7 @@
             "type": "string"
         },
         "modifiers": {
-            "$ref": "modifiers"
+            "$ref": "modifiers.json"
         },
         "deprecated": {
             "type": "boolean",
@@ -19,17 +19,17 @@
             "minItems": 1,
             "additionalItems": false,
             "items": {
-                "$ref": "parameter"
+                "$ref": "parameter.json"
             }
         },
         "return": {
-            "$ref": "return"
+            "$ref": "return.json"
         },
         "notes": {
             "type": "string"
         },
         "tags": {
-            "$ref": "../tags"
+            "$ref": "../tags.json"
         }
     }
 }

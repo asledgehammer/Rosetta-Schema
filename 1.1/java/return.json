@@ -5,7 +5,7 @@
     "additionalProperties": false,
     "properties": {
         "type": {
-            "$ref": "type"
+            "$ref": "type.json"
         },
         "notes": {
             "type": "string"
