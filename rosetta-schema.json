@@ -699,7 +699,7 @@
           "type": "boolean"
         },
         "generics": {
-          "$ref": "#/definitions/generics"
+          "$ref": "#/definitions/javaGenerics"
         }
       },
       "additionalProperties": false
