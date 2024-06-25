@@ -9,7 +9,7 @@
             "minItems": 1,
             "patternProperties": {
                 "^": {
-                    "$ref": "java/namespace.json"
+                    "$ref": "https://raw.githubusercontent.com/asledgehammer/PZ-Rosetta-Schema/main/1.1/java/namespace.json"
                 }
             }
         }
