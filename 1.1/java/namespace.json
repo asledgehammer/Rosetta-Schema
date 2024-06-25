@@ -1,12 +1,12 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "https://raw.githubusercontent.com/asledgehammer/PZ-Rosetta-Schema/main/1.1/java/namespace",
+    "$id": "https://raw.githubusercontent.com/asledgehammer/PZ-Rosetta-Schema/main/1.1/java/namespace.json",
     "type": "object",
     "minItems": 1,
     "additionalProperties": false,
     "patternProperties": {
         "^": {
-            "$ref": "1.1/java/class"
+            "$ref": "1.1/java/class.json"
         }
     }
 }
