@@ -13,10 +13,10 @@
             "description": "If the field is deprecated."
         },
         "modifiers": {
-            "$ref": "modifiers.json"
+            "$ref": "modifiers"
         },
         "type": {
-            "$ref": "type.json"
+            "$ref": "type"
         },
         "notes": {
             "type": "string"
@@ -25,7 +25,7 @@
             "type": "string"
         },
         "tags": {
-            "$ref": "../tags.json"
+            "$ref": "../tags"
         }
     }
 }

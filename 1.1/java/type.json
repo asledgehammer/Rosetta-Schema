@@ -16,7 +16,7 @@
           "type": "boolean"
         },
         "generics": {
-          "$ref": "generics.json"
+          "$ref": "generics"
         }
     }
 }
