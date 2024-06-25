@@ -6,10 +6,10 @@
   "type": "object",
   "properties": {
     "java": {
-      "$ref": "java"
+      "$ref": "1.1/java"
     },
     "lua": {
-      "$ref": "1.1/lua.json"
+      "$ref": "1.1/lua"
     }
   },
   "definitions": {
