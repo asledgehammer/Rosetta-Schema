@@ -6,7 +6,7 @@
     "additionalProperties": false,
     "patternProperties": {
         "^": {
-            "$ref": "1.1/java/class.json"
+            "$ref": "class.json"
         }
     }
 }

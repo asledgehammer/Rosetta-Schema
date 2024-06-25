@@ -16,7 +16,7 @@
           "type": "boolean"
         },
         "generics": {
-          "$ref": "1.1/java/generics.json"
+          "$ref": "generics.json"
         }
     }
 }
