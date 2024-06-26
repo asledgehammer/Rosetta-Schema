@@ -4,7 +4,7 @@
     "type": "object",
     "additionalProperties": false,
     "properties": {
-        "namespaces": {
+        "packages": {
             "type": "object",
             "minItems": 1,
             "patternProperties": {
