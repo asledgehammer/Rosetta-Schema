@@ -33,11 +33,13 @@
             }
         },
         "fields": {
-            "type": "array",
-            "minItems": 1,
-            "additionalItems": false,
-            "items": {
-                "$ref": "field.json"
+            "type": "object",
+            "minProperties": 1,
+            "additionalProperties": false,
+            "patternProperties": {
+                "^": {
+                    "$ref": "https://raw.githubusercontent.com/asledgehammer/PZ-Rosetta-Schema/main/1.1/lua/field.json"
+                }
             }
         },
         "games": {
@@ -51,7 +53,7 @@
                             "minItems": 1,
                             "additionalItems": false,
                             "items": {
-                                "$ref": "games/projectzomboid/event.json"
+                                "$ref": "https://raw.githubusercontent.com/asledgehammer/PZ-Rosetta-Schema/main/1.1/lua/games/projectzomboid/event.json"
                             }
                         }
                     }
