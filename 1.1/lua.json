@@ -3,5 +3,60 @@
     "$id": "https://raw.githubusercontent.com/asledgehammer/PZ-Rosetta-Schema/main/1.1/lua.json",
     "type": "object",
     "additionalItems": false,
-    "properties": {}
+    "properties": {
+        "classes": {
+            "type": "object",
+            "minItems": 1,
+            "additionalProperties": false,
+            "patternProperties": {
+                "^": {
+                    "$ref": "https://raw.githubusercontent.com/asledgehammer/PZ-Rosetta-Schema/main/1.1/lua/class.json"
+                }
+            }
+        },
+        "tables": {
+            "type": "object",
+            "minItems": 1,
+            "additionalProperties": false,
+            "patternProperties": {
+                "^": {
+                    "$ref": "https://raw.githubusercontent.com/asledgehammer/PZ-Rosetta-Schema/main/1.1/lua/table.json"
+                }
+            }
+        },
+        "functions": {
+            "type": "array",
+            "minItems": 1,
+            "additionalItems": false,
+            "items": {
+                "$ref": "function.json"
+            }
+        },
+        "fields": {
+            "type": "array",
+            "minItems": 1,
+            "additionalItems": false,
+            "items": {
+                "$ref": "field.json"
+            }
+        },
+        "games": {
+            "type": "object",
+            "properties": {
+                "projectzomboid": {
+                    "type": "object",
+                    "properties": {
+                        "events": {
+                            "type": "array",
+                            "minItems": 1,
+                            "additionalItems": false,
+                            "items": {
+                                "$ref": "games/projectzomboid/event.json"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

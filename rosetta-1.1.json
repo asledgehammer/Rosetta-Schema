@@ -10,6 +10,13 @@
     },
     "lua": {
       "$ref": "1.1/lua.json"
+    },
+    "version": {
+      "description": "The schema version for PZ-Rosetta. E.G: 1.1",
+      "type": "string"
     }
-  }
+  },
+  "required": [
+    "version"
+  ]
 }
