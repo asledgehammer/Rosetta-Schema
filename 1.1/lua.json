@@ -29,7 +29,7 @@
             "minItems": 1,
             "additionalItems": false,
             "items": {
-                "$ref": "function.json"
+                "$ref": "https://raw.githubusercontent.com/asledgehammer/PZ-Rosetta-Schema/main/1.1/lua/function.json"
             }
         },
         "fields": {

@@ -18,7 +18,7 @@
             "minItems": 1,
             "additionalItems": false,
             "items": {
-                "$ref": "method.json"
+                "$ref": "https://raw.githubusercontent.com/asledgehammer/PZ-Rosetta-Schema/main/1.1/java/method.json"
             }
         }
     }
