@@ -27,5 +27,9 @@
         "tags": {
             "$ref": "../tags.json"
         }
-    }
+    },
+    "required": [
+        "name",
+        "type"
+    ]
 }
