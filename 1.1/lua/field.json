@@ -6,17 +6,17 @@
     "additionalProperties": false,
     "properties": {
         "type": {
-          "type": "string"
+            "type": "string"
         },
         "nullable": {
-          "description": "Appends the 'nil' type to the list of optional types.",
-          "type": "boolean"
+            "description": "Appends the 'nil' type to the list of optional types.",
+            "type": "boolean"
         },
         "notes": {
-          "type": "string"
+            "type": "string"
         },
         "tags": {
-          "$ref": "../tags.json"
+            "$ref": "../tags.json"
         }
     }
 }

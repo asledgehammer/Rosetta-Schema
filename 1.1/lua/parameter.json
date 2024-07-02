@@ -6,21 +6,21 @@
     "additionalProperties": false,
     "properties": {
         "name": {
-          "type": "string"
+            "type": "string"
         },
         "type": {
-          "type": "string"
+            "type": "string"
         },
         "optional": {
-          "description": "Makes a parameter optional. All optional parameters must be at the end of the parameter list.",
-          "type": "boolean"
+            "description": "Makes a parameter optional. All optional parameters must be at the end of the parameter list.",
+            "type": "boolean"
         },
         "nullable": {
-          "description": "Appends the 'nil' type to the list of optional types.",
-          "type": "boolean"
+            "description": "Appends the 'nil' type to the list of optional types.",
+            "type": "boolean"
         },
         "notes": {
-          "type": "string"
+            "type": "string"
         }
     }
 }

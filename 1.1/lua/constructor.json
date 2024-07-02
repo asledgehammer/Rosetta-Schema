@@ -6,21 +6,21 @@
     "additionalProperties": false,
     "properties": {
         "deprecated": {
-          "type": "boolean",
-          "description": "If the function is deprecated."
+            "type": "boolean",
+            "description": "If the function is deprecated."
         },
         "parameters": {
-          "type": "array",
+            "type": "array",
             "minItems": 1,
             "items": {
                 "$ref": "parameter.json"
             }
         },
         "notes": {
-          "type": "string"
+            "type": "string"
         },
         "tags": {
-          "$ref": "../tags.json"
+            "$ref": "../tags.json"
         }
     }
 }

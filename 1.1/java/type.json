@@ -6,17 +6,17 @@
     "additionalProperties": false,
     "properties": {
         "basic": {
-          "type": "string"
+            "type": "string"
         },
         "full": {
-          "type": "string"
+            "type": "string"
         },
         "nullable": {
-          "description": "Appends the 'null' type to the list of optional types.",
-          "type": "boolean"
+            "description": "Appends the 'null' type to the list of optional types.",
+            "type": "boolean"
         },
         "generics": {
-          "$ref": "generics.json"
+            "$ref": "generics.json"
         }
     }
 }

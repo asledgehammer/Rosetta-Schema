@@ -19,7 +19,7 @@
                 "$ref": "parameter.json"
             }
         },
-        "returns": {
+        "return": {
             "$ref": "return.json"
         },
         "notes": {
