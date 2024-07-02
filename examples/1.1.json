@@ -5,12 +5,30 @@
         "lua": {
             "classes": {
                 "ExampleLuaClass": {
-                    "constructors": [],
+                    "constructors": [
+                        {
+                            "notes": "",
+                            "deprecated": false,
+                            "parameters": [
+                                {
+                                    "name": "param1",
+                                    "type": "number",
+                                    "notes": "",
+                                    "nullable": false,
+                                    "optional": true
+                                }
+                            ]
+                        }
+                    ],
                     "staticFields": [],
                     "fields": [],
                     "staticMethods": [],
                     "methods": [],
-                    "tags": [],
+                    "tags": [
+                        "example",
+                        "rendering",
+                        "ui"
+                    ],
                     "extends": "ISBaseObject",
                     "notes": "",
                     "deprecated": false,
