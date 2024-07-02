@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "https://raw.githubusercontent.com/asledgehammer/PZ-Rosetta-Schema/main/1.1/lua/games/projectzomboid/event.json",
+    "$id": "https://raw.githubusercontent.com/asledgehammer/PZ-Rosetta-Schema/main/1.1/games/projectzomboid/event.json",
     "type": "object",
     "minItems": 1,
     "additionalProperties": false,
@@ -13,7 +13,7 @@
             "description": "If the event is deprecated."
         },
         "callback": {
-            "$ref": "../../callback.json"
+            "$ref": "../../lua/callback.json"
         },
         "context": {
             "$ref": "context.json"
@@ -22,7 +22,7 @@
             "type": "string"
         },
         "tags": {
-            "$ref": "../../../tags.json"
+            "$ref": "../../tags.json"
         }
     }
 }
