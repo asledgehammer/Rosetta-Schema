@@ -5,9 +5,6 @@
     "minItems": 1,
     "additionalProperties": false,
     "properties": {
-        "name": {
-          "type": "string"
-        },
         "type": {
           "type": "string"
         },

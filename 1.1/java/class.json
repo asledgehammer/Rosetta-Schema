@@ -27,6 +27,15 @@
                 }
             }
         },
+        "fields": {
+            "type": "object",
+            "minItems": 1,
+            "patternProperties": {
+                "^": {
+                    "$ref": "field.json"
+                }
+            }
+        },
         "constructors": {
             "type": "array",
             "minItems": 1,
