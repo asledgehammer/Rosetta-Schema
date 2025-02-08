@@ -43,6 +43,14 @@
                 }
             }
         },
+        "overloads": {
+            "type": "array",
+            "minItems": 1,
+            "additionalItems": false,
+            "items": {
+                "$ref": "overload.json"
+            }
+        },
         "methods": {
             "type": "array",
             "minItems": 1,

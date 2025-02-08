@@ -26,6 +26,13 @@
                 "$ref": "return.json"
             }
         },
+        "overloads": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "$ref": "overload.json"
+            }
+        },
         "notes": {
             "type": "string"
         },

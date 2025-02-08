@@ -29,6 +29,14 @@
                 "$ref": "method.json"
             }
         },
+        "overloads": {
+            "type": "array",
+            "minItems": 1,
+            "additionalItems": false,
+            "items": {
+                "$ref": "overload.json"
+            }
+        },
         "notes": {
             "type": "string"
         },
