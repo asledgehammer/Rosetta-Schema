@@ -37,6 +37,14 @@
                 "$ref": "overload.json"
             }
         },
+        "operators": {
+            "type": "array",
+            "minItems": 1,
+            "additionalItems": false,
+            "items": {
+                "$ref": "operator.json"
+            }
+        },
         "notes": {
             "type": "string"
         },
