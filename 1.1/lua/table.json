@@ -13,6 +13,10 @@
             "type": "boolean",
             "description": "If true, the Lua class will allow foreign properties assigned to it. E.G: '--- @field [any] any'"
         },
+        "local": {
+            "type": "boolean",
+            "description": "If true, the table should be emitted as a local variable."
+        },
         "staticFields": {
             "type": "array",
             "minItems": 1,
