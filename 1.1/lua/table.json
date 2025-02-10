@@ -18,11 +18,13 @@
             "description": "If true, the table should be emitted as a local variable."
         },
         "staticFields": {
-            "type": "array",
+            "type": "object",
             "minItems": 1,
-            "additionalItems": false,
-            "items": {
-                "$ref": "field.json"
+            "additionalProperties": false,
+            "patternProperties": {
+                "^": {
+                    "$ref": "field.json"
+                }
             }
         },
         "methods": {
