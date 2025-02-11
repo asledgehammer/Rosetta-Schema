@@ -15,6 +15,9 @@
         "notes": {
             "type": "string"
         },
+        "defaultValue": {
+            "type": "string"
+        },
         "tags": {
             "$ref": "../tags.json"
         }
