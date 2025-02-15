@@ -4,6 +4,19 @@
     "type": "object",
     "additionalItems": false,
     "properties": {
+        "aliases": {
+            "type": "object",
+            "minItems": 1,
+            "patternProperties": {
+                "^": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                        "$ref": "https://raw.githubusercontent.com/asledgehammer/PZ-Rosetta-Schema/main/1.1/lua/alias.json"
+                    }
+                }
+            }
+        },
         "classes": {
             "type": "object",
             "minItems": 1,
