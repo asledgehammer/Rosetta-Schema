@@ -4,9 +4,20 @@
   "type": "object",
   "minItems": 1,
   "additionalProperties": false,
-  "patternProperties": {
-    "^": {
-      "$ref": "class.json"
+  "properties": {
+    "classes": {
+      "patternProperties": {
+        "^": {
+          "$ref": "class.json"
+        }
+      }
+    },
+    "packages": {
+      "patternProperties": {
+        "^": {
+          "$ref": "package.json"
+        }
+      }
     }
   }
 }
