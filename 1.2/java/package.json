@@ -1,12 +1,12 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "https://raw.githubusercontent.com/asledgehammer/PZ-Rosetta-Schema/main/1.2/java/package.json",
-    "type": "object",
-    "minItems": 1,
-    "additionalProperties": false,
-    "patternProperties": {
-        "^": {
-            "$ref": "class.json"
-        }
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://raw.githubusercontent.com/asledgehammer/PZ-Rosetta-Schema/main/1.2/java/package.json",
+  "type": "object",
+  "minItems": 1,
+  "additionalProperties": false,
+  "patternProperties": {
+    "^": {
+      "$ref": "class.json"
     }
+  }
 }

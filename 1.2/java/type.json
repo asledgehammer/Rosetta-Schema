@@ -1,26 +1,26 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "https://raw.githubusercontent.com/asledgehammer/PZ-Rosetta-Schema/main/1.2/java/type.json",
-    "type": "object",
-    "minItems": 1,
-    "additionalProperties": false,
-    "required": ["base"],
-    "properties": {
-        "full": {
-            "type": "string",
-            "description": "The full string version of the type."
-        },
-        "base": {
-            "type": "string",
-            "description": "The base type. This is required. E.G: String, int, List"
-        },
-        "nullable": {
-            "type": "boolean",
-            "description": "Appends the 'null' type to the list of optional types."
-        },
-        "generics": {
-            "$ref": "generics.json",
-            "description": "Required for generic sub-types definitions. For List<String>, \"base\" would be \"List\" and generics would be [{\"base\": \"String\"}]"
-        }
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://raw.githubusercontent.com/asledgehammer/PZ-Rosetta-Schema/main/1.2/java/type.json",
+  "type": "object",
+  "minItems": 1,
+  "additionalProperties": false,
+  "required": ["base"],
+  "properties": {
+    "full": {
+      "type": "string",
+      "description": "The full string version of the type."
+    },
+    "base": {
+      "type": "string",
+      "description": "The base type. This is required. E.G: String, int, List"
+    },
+    "nullable": {
+      "type": "boolean",
+      "description": "Appends the 'null' type to the list of optional types."
+    },
+    "generics": {
+      "$ref": "generics.json",
+      "description": "Required for generic sub-types definitions. For List<String>, \"base\" would be \"List\" and generics would be [{\"base\": \"String\"}]"
     }
+  }
 }
