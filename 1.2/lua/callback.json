@@ -17,7 +17,14 @@
       "type": "array",
       "minItems": 1,
       "items": {
-        "$ref": "return.json"
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "$ref": "return.json"
+          }
+        ]
       }
     },
     "notes": {
