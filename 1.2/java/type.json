@@ -4,17 +4,23 @@
     "type": "object",
     "minItems": 1,
     "additionalProperties": false,
+    "required": ["base"],
     "properties": {
         "full": {
-            "description": "The full string version of the type.",
-            "type": "string"
+            "type": "string",
+            "description": "The full string version of the type."
+        },
+        "base": {
+            "type": "string",
+            "description": "The base type. This is required. E.G: String, int, List"
         },
         "nullable": {
-            "description": "Appends the 'null' type to the list of optional types.",
-            "type": "boolean"
+            "type": "boolean",
+            "description": "Appends the 'null' type to the list of optional types."
         },
         "generics": {
-            "$ref": "generics.json"
+            "$ref": "generics.json",
+            "description": "Required for generic sub-types definitions. For List<String>, \"base\" would be \"List\" and generics would be [{\"base\": \"String\"}]"
         }
     }
 }
