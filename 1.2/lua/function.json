@@ -33,6 +33,13 @@
                 "$ref": "overload.json"
             }
         },
+        "generics": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "$ref": "generic.json"
+            }
+        },
         "notes": {
             "type": "string"
         },
