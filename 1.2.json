@@ -20,8 +20,9 @@
         }
       }
     },
-    "games": {
-      "type": "object"
+    "applications": {
+      "type": "object",
+      "description": "All third-party schema definitions goes here."
     },
     "tags": {
       "$ref": "1.2/tags.json"
