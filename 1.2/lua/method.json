@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "https://raw.githubusercontent.com/asledgehammer/PZ-Rosetta-Schema/main/1.1/lua/method.json",
+    "$id": "https://raw.githubusercontent.com/asledgehammer/PZ-Rosetta-Schema/main/1.2/lua/method.json",
     "type": "object",
     "minItems": 1,
     "additionalProperties": false,
