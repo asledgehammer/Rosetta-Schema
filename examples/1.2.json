@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/asledgehammer/PZ-Rosetta-Schema/main/1.2.json?p=1",
+  "$schema": "https://raw.githubusercontent.com/asledgehammer/PZ-Rosetta-Schema/main/1.2.json?p=2",
   "version": "1.2",
   "languages": {
     "lua": {
@@ -79,12 +79,6 @@
           "ExampleClass": {
             "staticFields": {},
             "fields": {},
-            "staticMethods": [],
-            "methods": [],
-            "constructors": [],
-            "modifiers": [],
-            "generics": [],
-            "tags": [],
             "javaType": "class",
             "extends": "Object",
             "notes": "",
@@ -97,37 +91,25 @@
           "name": "ExampleGlobalAPIMethod",
           "deprecated": false,
           "modifiers": ["public", "static"],
-          "tags": [],
           "notes": "",
           "parameters": [
             {
               "name": "param1",
               "notes": "",
-              "type": {
-                "basic": "int"
-              }
+              "type": "int"
             },
             {
               "name": "param2",
               "notes": "",
               "type": {
-                "basic": "List",
-                "full": "java.util.List",
-                "generics": [
-                  {
-                    "basic": "String",
-                    "full": "java.lang.String"
-                  }
-                ],
+                "base": "List",
+                "parameters": ["java.lang.String"],
                 "nullable": false
               }
             }
           ],
           "return": {
-            "notes": "",
-            "type": {
-              "basic": "void"
-            }
+            "type": "void"
           }
         }
       ]
@@ -141,7 +123,6 @@
             {
               "name": "OnExampleEvent",
               "notes": "",
-              "tags": [],
               "deprecated": false,
               "context": {
                 "client": false,
@@ -151,7 +132,6 @@
               },
               "callback": {
                 "notes": "",
-                "tags": [],
                 "parameters": [
                   {
                     "name": "param1",
@@ -162,9 +142,6 @@
                   }
                 ],
                 "return": {
-                  "name": "result",
-                  "notes": "",
-                  "nullable": false,
                   "type": "number"
                 }
               }
