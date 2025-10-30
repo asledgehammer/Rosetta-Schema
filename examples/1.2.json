@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/asledgehammer/PZ-Rosetta-Schema/main/1.2.json?p=2",
+  "$schema": "https://raw.githubusercontent.com/asledgehammer/PZ-Rosetta-Schema/main/1.2.json?f=4",
   "version": "1.2",
   "languages": {
     "lua": {
@@ -141,9 +141,7 @@
                     "optional": true
                   }
                 ],
-                "return": {
-                  "type": "number"
-                }
+                "return": "number"
               }
             }
           ]
