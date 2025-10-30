@@ -1,0 +1,38 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/asledgehammer/PZ-Rosetta-Schema/1.2/main/1.2.json",
+    "type": "object",
+    "minProperties": 1,
+    "additionalItems": true,
+    "properties": {
+        "version": {
+            "description": "The schema version for Rosetta. E.G: 1.2",
+            "type": "string"
+        },
+        "languages": {
+            "type": "object",
+            "properties": {
+                "java": {
+                    "$ref": "1.2/java.json"
+                },
+                "lua": {
+                    "$ref": "1.2/lua.json"
+                }
+            }
+        },
+        "games": {
+            "type": "object",
+            "properties": {
+                "projectzomboid": {
+                    "$ref": "https://raw.githubusercontent.com/asledgehammer/PZ-Rosetta-Schema/main/1.2/game/projectzomboid.json"
+                }
+            }
+        },
+        "tags": {
+            "$ref": "1.2/tags.json"
+        }
+    },
+    "required": [
+        "version"
+    ]
+}
