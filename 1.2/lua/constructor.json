@@ -6,7 +6,7 @@
     "additionalProperties": false,
     "properties": {
         "deprecated": {
-            "type": "boolean",
+            "type": ["boolean", "string"],
             "description": "If the function is deprecated."
         },
         "parameters": {

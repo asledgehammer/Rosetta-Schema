@@ -49,7 +49,7 @@
             "type": "object",
             "properties": {
                 "deprecated": {
-                    "type": "boolean",
+                    "type": ["boolean", "string"],
                     "description": "If the event is deprecated."
                 },
                 "name": {
@@ -107,7 +107,7 @@
             "type": "object",
             "properties": {
                 "deprecated": {
-                    "type": "boolean",
+                    "type": ["boolean", "string"],
                     "description": "If the hook is deprecated."
                 },
                 "name": {
@@ -192,7 +192,7 @@
             "description": "Lua Class.",
             "properties": {
                 "deprecated": {
-                    "type": "boolean",
+                    "type": ["boolean", "string"],
                     "description": "If the class is deprecated."
                 },
                 "extends": {
@@ -231,7 +231,7 @@
             "description": "Function.",
             "properties": {
                 "deprecated": {
-                    "type": "boolean",
+                    "type": ["boolean", "string"],
                     "description": "If the function is deprecated."
                 },
                 "parameters": {
@@ -264,7 +264,7 @@
             "description": "Table.",
             "properties": {
                 "deprecated": {
-                    "type": "boolean",
+                    "type": ["boolean", "string"],
                     "description": "If the class is deprecated."
                 },
                 "fields": {
@@ -483,7 +483,7 @@
                     "$ref": "#/definitions/javaGenerics"
                 },
                 "deprecated": {
-                    "type": "boolean",
+                    "type": ["boolean", "string"],
                     "description": "If the class is deprecated."
                 },
                 "javaType": {
@@ -531,7 +531,7 @@
                     "type": "string"
                 },
                 "deprecated": {
-                    "type": "boolean",
+                    "type": ["boolean", "string"],
                     "description": "If the field is deprecated."
                 },
                 "modifiers": {
@@ -575,7 +575,7 @@
                     "$ref": "#/definitions/javaModifiers"
                 },
                 "deprecated": {
-                    "type": "boolean",
+                    "type": ["boolean", "string"],
                     "description": "If the method is deprecated."
                 },
                 "parameters": {
@@ -613,7 +613,7 @@
                     "$ref": "#/definitions/javaModifiers"
                 },
                 "deprecated": {
-                    "type": "boolean",
+                    "type": ["boolean", "string"],
                     "description": "If the constructor is deprecated."
                 },
                 "parameters": {

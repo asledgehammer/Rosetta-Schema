@@ -11,7 +11,7 @@
             "$ref": "modifiers.json"
         },
         "deprecated": {
-            "type": "boolean",
+            "type": ["boolean", "string"],
             "description": "If the method is deprecated."
         },
         "parameters": {
