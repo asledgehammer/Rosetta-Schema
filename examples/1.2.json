@@ -40,10 +40,6 @@
               ]
             }
           ],
-          "staticFields": [],
-          "fields": [],
-          "staticMethods": [],
-          "methods": [],
           "tags": ["example", "rendering", "ui"],
           "extends": "ISBaseObject",
           "notes": "",
@@ -53,9 +49,6 @@
       },
       "tables": {
         "ExampleLuaTable": {
-          "staticFields": [],
-          "staticMethods": [],
-          "tags": [],
           "notes": "",
           "deprecated": false,
           "mutable": true
@@ -65,14 +58,12 @@
         "ExampleField": {
           "notes": "",
           "nullable": true,
-          "tags": [],
           "type": "number"
         }
       },
       "functions": [
         {
           "name": "ExampleFunction",
-          "tags": [],
           "notes": "",
           "deprecated": false,
           "parameters": [
@@ -84,7 +75,7 @@
               "optional": true
             }
           ],
-          "return": "number"
+          "return": ["number"]
         }
       ]
     }
