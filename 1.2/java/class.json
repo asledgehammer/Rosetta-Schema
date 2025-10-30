@@ -5,7 +5,7 @@
   "minItems": 1,
   "additionalProperties": false,
   "properties": {
-    "generics": {
+    "parameters": {
       "$ref": "generics.json"
     },
     "deprecated": {
