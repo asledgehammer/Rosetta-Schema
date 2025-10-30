@@ -18,9 +18,9 @@
       "type": "boolean",
       "description": "Appends the 'null' type to the list of optional types."
     },
-    "generics": {
+    "parameters": {
       "$ref": "generics.json",
-      "description": "Required for generic sub-types definitions. For List<String>, \"base\" would be \"List\" and generics would be [{\"base\": \"String\"}]"
+      "description": "Required for generic sub-type parameters. For List<String>, \"base\" would be \"List\" and generics would be [{\"base\": \"String\"}]"
     }
   }
 }
