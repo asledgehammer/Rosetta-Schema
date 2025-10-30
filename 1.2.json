@@ -21,12 +21,7 @@
       }
     },
     "games": {
-      "type": "object",
-      "properties": {
-        "projectzomboid": {
-          "$ref": "https://raw.githubusercontent.com/asledgehammer/Rosetta-Schema/main/1.2/game/projectzomboid.json"
-        }
-      }
+      "type": "object"
     },
     "tags": {
       "$ref": "1.2/tags.json"
