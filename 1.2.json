@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "https://raw.githubusercontent.com/asledgehammer/Rosetta-Schema/1.2/main/1.2.json",
+  "$id": "https://raw.githubusercontent.com/Rosetta-Docs/Rosetta-Docs-Schema/refs/heads/1.2/1.2.json",
   "type": "object",
   "minProperties": 1,
   "additionalItems": true,
@@ -20,8 +20,9 @@
         }
       }
     },
-    "games": {
-      "type": "object"
+    "applications": {
+      "type": "object",
+      "description": "All third-party schema definitions goes here."
     },
     "tags": {
       "$ref": "1.2/tags.json"
