@@ -32,5 +32,5 @@
       "$ref": "../tags.json"
     }
   },
-  "required": ["name", "return"]
+  "required": ["name"]
 }
