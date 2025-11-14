@@ -14,6 +14,9 @@
       "type": "string",
       "description": "The base type. This is required. E.G: String, int, List"
     },
+    "generic": {
+      "type": "boolean"
+    },
     "parameters": {
       "$ref": "generics.json",
       "description": "Required for generic sub-type parameters. For List<String>, \"base\" would be \"List\" and generics would be [{\"base\": \"String\"}]"
