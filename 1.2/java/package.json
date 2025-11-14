@@ -18,6 +18,12 @@
           "$ref": "package.json"
         }
       }
+    },
+    "notes": {
+      "type": "string"
+    },
+    "tags": {
+      "$ref": "../tags.json"
     }
   }
 }
