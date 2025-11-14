@@ -9,6 +9,11 @@
       "description": "The schema version for Rosetta. E.G: 1.2",
       "type": "string"
     },
+    "locale": {
+      "type": "string",
+      "description": "The language locale to identify the language used for documentation. (Default: EN_US)",
+      "default": "EN_US"
+    },
     "languages": {
       "type": "object",
       "properties": {
