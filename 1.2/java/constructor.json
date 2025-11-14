@@ -20,6 +20,14 @@
         "$ref": "parameter.json"
       }
     },
+    "type_parameters": {
+      "type": "array",
+      "minItems": 1,
+      "additionalItems": false,
+      "items": {
+        "$ref": "type_parameter.json"
+      }
+    },
     "notes": {
       "type": "string"
     }

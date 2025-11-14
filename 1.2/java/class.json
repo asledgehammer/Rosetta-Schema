@@ -5,8 +5,13 @@
   "minItems": 1,
   "additionalProperties": false,
   "properties": {
-    "parameters": {
-      "$ref": "generics.json"
+    "type_parameters": {
+      "type": "array",
+      "minItems": 1,
+      "additionalItems": false,
+      "items": {
+        "$ref": "type_parameter.json"
+      }
     },
     "deprecated": {
       "type": ["boolean", "string"],
