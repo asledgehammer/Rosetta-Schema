@@ -25,10 +25,13 @@
         }
       ]
     },
-    "notes": {
-      "type": "string"
+    "nullable": {
+      "type": "boolean"
     },
     "defaultValue": {
+      "type": "string"
+    },
+    "notes": {
       "type": "string"
     },
     "tags": {

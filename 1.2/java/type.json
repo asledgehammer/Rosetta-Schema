@@ -14,10 +14,6 @@
       "type": "string",
       "description": "The base type. This is required. E.G: String, int, List"
     },
-    "nullable": {
-      "type": "boolean",
-      "description": "Appends the 'null' type to the list of optional types."
-    },
     "parameters": {
       "$ref": "generics.json",
       "description": "Required for generic sub-type parameters. For List<String>, \"base\" would be \"List\" and generics would be [{\"base\": \"String\"}]"

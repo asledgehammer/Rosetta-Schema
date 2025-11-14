@@ -14,6 +14,9 @@
         }
       ]
     },
+    "nullable": {
+      "type": "boolean"
+    },
     "notes": {
       "type": "string"
     }
