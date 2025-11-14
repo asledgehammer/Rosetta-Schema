@@ -7,8 +7,17 @@
     "name": {
       "type": "string"
     },
-    "modifiers": {
-      "$ref": "modifiers.json"
+    "static": {
+      "type": "boolean",
+      "description": "Default: False"
+    },
+    "scope": {
+      "type": "string",
+      "enum": ["public", "package", "protected", "private"]
+    },
+    "final": {
+      "type": "boolean",
+      "description": "Default: False"
     },
     "deprecated": {
       "type": ["boolean", "string"],

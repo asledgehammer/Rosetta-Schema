@@ -5,6 +5,18 @@
   "minItems": 1,
   "additionalProperties": false,
   "properties": {
+    "static": {
+      "type": "boolean",
+      "description": "Default: False"
+    },
+    "scope": {
+      "type": "string",
+      "enum": ["public", "package", "protected", "private"]
+    },
+    "final": {
+      "type": "boolean",
+      "description": "Default: False"
+    },
     "type_parameters": {
       "type": "array",
       "minItems": 1,
@@ -40,15 +52,6 @@
         }
       ]
     },
-    "staticFields": {
-      "type": "object",
-      "minItems": 1,
-      "patternProperties": {
-        "^": {
-          "$ref": "field.json"
-        }
-      }
-    },
     "fields": {
       "type": "object",
       "minItems": 1,
@@ -71,16 +74,6 @@
       "items": {
         "$ref": "method.json"
       }
-    },
-    "staticMethods": {
-      "type": "array",
-      "minItems": 1,
-      "items": {
-        "$ref": "method.json"
-      }
-    },
-    "modifiers": {
-      "$ref": "modifiers.json"
     },
     "notes": {
       "type": "string"

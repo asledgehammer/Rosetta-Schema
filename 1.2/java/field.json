@@ -12,8 +12,25 @@
       "type": ["boolean", "string"],
       "description": "If the field is deprecated."
     },
-    "modifiers": {
-      "$ref": "modifiers.json"
+    "static": {
+      "type": "boolean",
+      "description": "Default: False"
+    },
+    "scope": {
+      "type": "string",
+      "enum": ["public", "package", "protected", "private"]
+    },
+    "final": {
+      "type": "boolean",
+      "description": "Default: False"
+    },
+    "transient": {
+      "type": "boolean",
+      "description": "Default: False"
+    },
+    "volatile": {
+      "type": "boolean",
+      "description": "Default: False"
     },
     "type": {
       "anyOf": [

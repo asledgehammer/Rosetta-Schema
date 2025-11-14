@@ -5,8 +5,9 @@
   "minItems": 1,
   "additionalProperties": false,
   "properties": {
-    "modifiers": {
-      "$ref": "modifiers.json"
+    "scope": {
+      "type": "string",
+      "enum": ["public", "package", "protected", "private"]
     },
     "deprecated": {
       "type": ["boolean", "string"],
