@@ -7,13 +7,13 @@
     "name": {
       "type": "string"
     },
-    "static": {
-      "type": "boolean",
-      "description": "Default: False"
-    },
     "scope": {
       "type": "string",
       "enum": ["public", "package", "protected", "private"]
+    },
+    "static": {
+      "type": "boolean",
+      "description": "Default: False"
     },
     "final": {
       "type": "boolean",

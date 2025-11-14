@@ -12,13 +12,13 @@
       "type": ["boolean", "string"],
       "description": "If the field is deprecated."
     },
-    "static": {
-      "type": "boolean",
-      "description": "Default: False"
-    },
     "scope": {
       "type": "string",
       "enum": ["public", "package", "protected", "private"]
+    },
+    "static": {
+      "type": "boolean",
+      "description": "Default: False"
     },
     "final": {
       "type": "boolean",

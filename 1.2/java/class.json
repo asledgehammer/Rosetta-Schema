@@ -5,13 +5,13 @@
   "minItems": 1,
   "additionalProperties": false,
   "properties": {
-    "static": {
-      "type": "boolean",
-      "description": "Default: False"
-    },
     "scope": {
       "type": "string",
       "enum": ["public", "package", "protected", "private"]
+    },
+    "static": {
+      "type": "boolean",
+      "description": "Default: False"
     },
     "final": {
       "type": "boolean",
