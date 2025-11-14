@@ -17,9 +17,6 @@
       "type": ["boolean", "string"],
       "description": "If the class is deprecated."
     },
-    "javaType": {
-      "type": "string"
-    },
     "extends": {
       "type": "string"
     },
