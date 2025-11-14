@@ -8,6 +8,10 @@
     "name": {
       "type": "string"
     },
+    "static": {
+      "type": "boolean",
+      "description": "Default: False"
+    },
     "deprecated": {
       "type": ["boolean", "string"],
       "description": "If the function is deprecated."

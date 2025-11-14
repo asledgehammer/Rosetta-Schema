@@ -17,25 +17,7 @@
       "type": "boolean",
       "description": "If true, the table should be emitted as a local variable."
     },
-    "static_fields": {
-      "type": "object",
-      "minItems": 1,
-      "additionalProperties": false,
-      "patternProperties": {
-        "^": {
-          "$ref": "field.json"
-        }
-      }
-    },
     "methods": {
-      "type": "array",
-      "minItems": 1,
-      "additionalItems": false,
-      "items": {
-        "$ref": "method.json"
-      }
-    },
-    "static_methods": {
       "type": "array",
       "minItems": 1,
       "additionalItems": false,

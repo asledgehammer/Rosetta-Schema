@@ -8,6 +8,10 @@
     "type": {
       "type": "string"
     },
+    "static": {
+      "type": "boolean",
+      "description": "Default: False"
+    },
     "nullable": {
       "description": "Appends the 'nil' type to the list of optional types.",
       "type": "boolean"
