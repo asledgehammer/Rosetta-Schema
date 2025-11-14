@@ -18,7 +18,15 @@
       "description": "If the class is deprecated."
     },
     "extends": {
-      "type": "string"
+      "type": "object",
+      "anyOf": [
+        {
+          "$ref": "type.json"
+        },
+        {
+          "$ref": "string"
+        }
+      ]
     },
     "staticFields": {
       "type": "object",
