@@ -5,12 +5,14 @@
   "additionalItems": false,
   "properties": {
     "namespaces": {
-      "type": "array",
-      "anyOf": [
-        {
-          "$ref": "namespace.json"
+      "type": "object",
+      "minProperties": 1,
+      "description": "Use \"global\" for global or default namespace.",
+      "patternProperties": {
+        "^": {
+          "$ref": "https://raw.githubusercontent.com/Rosetta-Docs/Rosetta-Docs-Schema/refs/heads/1.2/1.2/lua/namespace.json"
         }
-      ]
+      }
     },
     "aliases": {
       "type": "object",
