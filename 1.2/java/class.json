@@ -28,6 +28,18 @@
         }
       ]
     },
+    "implements": {
+      "type": "array",
+      "minItems": 1,
+      "anyOf": [
+        {
+          "$ref": "type.json"
+        },
+        {
+          "$ref": "string"
+        }
+      ]
+    },
     "staticFields": {
       "type": "object",
       "minItems": 1,
