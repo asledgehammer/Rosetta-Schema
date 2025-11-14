@@ -28,9 +28,16 @@
         }
       ]
     },
+    "bounds_type": {
+      "type": "string",
+      "enum": ["extends", "super"]
+    },
     "parameters": {
       "$ref": "generics.json",
       "description": "Required for generic sub-type parameters. For List<String>, \"base\" would be \"List\" and generics would be [{\"base\": \"String\"}]"
     }
+  },
+  "dependencies": {
+    "bounds": ["bounds_type"]
   }
 }
