@@ -2,8 +2,8 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "https://raw.githubusercontent.com/Rosetta-Docs/Rosetta-Docs-Schema/refs/heads/1.2/1.2/java/type.json",
   "type": "object",
-  "minItems": 1,
   "additionalProperties": false,
+  "minProperties": 1,
   "required": ["base"],
   "properties": {
     "full": {

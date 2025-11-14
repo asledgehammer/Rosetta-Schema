@@ -4,6 +4,7 @@
   "type": "object",
   "minItems": 1,
   "additionalProperties": false,
+  "minProperties": 1,
   "properties": {
     "classes": {
       "patternProperties": {

@@ -3,6 +3,7 @@
   "$id": "https://raw.githubusercontent.com/Rosetta-Docs/Rosetta-Docs-Schema/refs/heads/1.2/1.2/java/method.json",
   "type": "object",
   "additionalProperties": false,
+  "minProperties": 1,
   "properties": {
     "name": {
       "type": "string"

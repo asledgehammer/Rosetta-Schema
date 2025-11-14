@@ -16,6 +16,7 @@
     },
     "languages": {
       "type": "object",
+      "minProperties": 1,
       "properties": {
         "java": {
           "$ref": "1.2/java.json"
