@@ -17,6 +17,17 @@
     "generic": {
       "type": "boolean"
     },
+    "bounds": {
+      "type": "array",
+      "anyOf": [
+        {
+          "$ref": "type.json"
+        },
+        {
+          "type": "string"
+        }
+      ]
+    },
     "parameters": {
       "$ref": "generics.json",
       "description": "Required for generic sub-type parameters. For List<String>, \"base\" would be \"List\" and generics would be [{\"base\": \"String\"}]"
